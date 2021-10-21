@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+
+.gameBoard {
+  border: 1px solid steelblue;
+  height: 500px;
+  width: 600px;
+  position: relative;
+  background-color: black;
+}
+.plyr1 {
+  height: 200px;
+  width: 100px;
+  border: 1px solid rgb(233, 152, 152);
+  bottom: 0%;
+  left: 10px;
+  position: absolute;
+  background-color: rgb(243, 139, 139);
+}
+.plyr2 {
+  height: 200px;
+  width: 100px;
+  border: 1px solid rgb(230, 218, 218);
+  bottom: 0%;
+  left: 500px;
+  position: absolute;
+  background-color: rgb(126, 236, 209);
+}
+.tableInfo {
+  border: 2px solid green;
+}
+.image{
+  height: 150px;
+  width: 80px;
+}

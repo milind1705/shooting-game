@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shooting game</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="gameInfo">
+        <table>
+          <tr>
+            <td class="tableInfo">plyer</td>
+            <td class="tableInfo">game Won</td>
+          </tr>
+          <tr>
+            <td class="tableInfo">player 1</td>
+            <td class="tableInfo" id="plyr1Score"></td>
+          </tr>
+          <tr>
+            <td class="tableInfo">player 2</td>
+            <td class="tableInfo" id="plyr2score"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="gameBoard">
+        <div class="plyr1">
+          <button id="player1" onclick="isShoot(this)">Attack</button>
+          <div id="plyr1"></div>
+          <img class="image" src="img1.png" alt="player 1">
+        </div>
+
+        <div class="plyr2">
+          <button id="player2" onclick="isShoot1(this)">Attack</button>
+          <div id="plyr2"></div>
+          <img class="image" src="Reaper.png" alt="player 2">
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
