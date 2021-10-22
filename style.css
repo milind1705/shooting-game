@@ -34,3 +34,13 @@ body {
   height: 150px;
   width: 80px;
 }
+
+#flashBar{
+  height: 5px;
+  width:320px ;
+  background-color: rgb(255, 255, 254);
+  bottom: 25%;
+  left: 150px;
+  position: absolute;
+  display: none;
+}

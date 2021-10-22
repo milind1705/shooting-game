@@ -14,6 +14,7 @@ function attackPower(min, max) {
 function isShoot(player) {
   let power = attackPower(1, 5);
   initialHealthOfplyer2 = initialHealthOfplyer2 - power;
+  flashBar()
   document.getElementById("plyr2").innerHTML = initialHealthOfplyer2;
   if (initialHealthOfplyer2 <= 0) {
     initialHealthOfplyer2 = 0;
@@ -26,6 +27,7 @@ function isShoot1(player) {
   let power = attackPower(1, 5);
   initialHealthOfplyer1 = initialHealthOfplyer1 - power;
   document.getElementById("plyr1").innerHTML = initialHealthOfplyer1;
+  flashBar();
   if (initialHealthOfplyer1 <= 0) {
     initialHealthOfplyer1 = 0;
     alert("player 1 died");
@@ -65,4 +67,13 @@ function winMatch() {
 
 function scoreReset() {
   location.reload();
+}
+
+function flashBar() {
+  document.getElementById('flashBar').style.display = 'block';
+   setTimeout(noFlashBar, 1000)
+}
+
+function noFlashBar() {
+  document.getElementById('flashBar').style.display = 'none';
 }
