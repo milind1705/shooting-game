@@ -27,14 +27,23 @@ body {
   position: absolute;
   background-color: rgb(126, 236, 209);
 }
+#plyr1, #plyr2{
+  height: auto;
+  width: auto;
+  border: black 1px solid;
+  background-color: rgb(245, 133, 133);
+  align-items:center;
+  margin-left: auto;
+  margin-right: auto;
+}
 .tableInfo {
   border: 2px solid green;
 }
 .image{
   height: 150px;
   width: 80px;
-}
 
+}
 #flashBar{
   height: 5px;
   width:320px ;

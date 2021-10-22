@@ -1,16 +1,19 @@
-function start(startgame) {}
+//scoreBoard 
 let player1Score = 0;
 document.getElementById("plyr1Score").innerHTML = player1Score;
 let player2Score = 0;
 document.getElementById("plyr2score").innerHTML = player2Score;
 
+//health initialization
 let initialHealthOfplyer1 = (document.getElementById("plyr1").innerHTML = 20);
 let initialHealthOfplyer2 = (document.getElementById("plyr2").innerHTML = 20);
 
+//random power for attack
 function attackPower(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+//function for attack
 function isShoot(player) {
   let power = attackPower(1, 5);
   initialHealthOfplyer2 = initialHealthOfplyer2 - power;
@@ -36,6 +39,7 @@ function isShoot1(player) {
   }
 }
 
+//declearation of winner of game (single set)
 function winner() {
   if (initialHealthOfplyer1 <= 0) {
     alert("Player 2 won");
@@ -48,12 +52,15 @@ function winner() {
   }
   winMatch();
 }
+
+//new game setup
 function nextMatch() {
   alert("New Game");
   initialHealthOfplyer1 = document.getElementById("plyr1").innerHTML = 20;
   initialHealthOfplyer2 = document.getElementById("plyr2").innerHTML = 20;
 }
 
+//winnerr of the Match (full game)
 function winMatch() {
   if (player1Score == 3) {
     alert("Player 1 won the Match");
@@ -65,13 +72,15 @@ function winMatch() {
   }
 }
 
+//reset the scoreBoard
 function scoreReset() {
   location.reload();
 }
 
+//firing
 function flashBar() {
   document.getElementById('flashBar').style.display = 'block';
-   setTimeout(noFlashBar, 1000)
+   setTimeout(noFlashBar, 500)
 }
 
 function noFlashBar() {
